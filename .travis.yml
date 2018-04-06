@@ -5,4 +5,4 @@ services:
   - docker
 
 script:
-  - bash test.sh
+  - docker build .
