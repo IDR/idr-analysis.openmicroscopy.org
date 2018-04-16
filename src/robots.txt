@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /$
+Allow: /index.html
+Allow: /deployment.html
+Allow: /css/
+Allow: /fonts/
+Allow: /img/
+Allow: /js/
+Disallow: /
