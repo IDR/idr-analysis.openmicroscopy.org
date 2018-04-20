@@ -9,24 +9,49 @@ title: Deployment
                 <div class="medium-12 columns">
                     <h1 class="hero-main-header">Deployment</h1>
                     <p class="hero-subheader small-10 medium-10 large-10 small-offset-1 medium-offset-1 large-offset-1">
-                    TODO</p>
+                      The VAE runs on a Kubernetes Cluster hosted on an <a href="https://www.openstack.org/">OpenStack</a> cloud at <a href="https://www.ebi.ac.uk/">EMBL-EBI</a>.
+                    </p>
                 </div>
             </div>
         </header>
 
-        <!-- begin Deployment section -->
+        <!-- begin Kubernetes section -->
         <hr class="whitespace">
         <div class="row column text-center">
-            <h2>TODO</h2>
+            <h2>Kubernetes cluster</h2>
         </div>
         <hr>
         <div class="row">
             <div class="small-10 small-centered medium-10 medium-centered columns">
                 <div class="row horizontal">
                     <div>
-                        <p>TODO</p>
+                        <p>
+                          A Kubernetes cluster is required to deploy the VAE.
+                          At present this is deployed using <a href="https://www.ansible.com/">Ansible</a> and the <a href="https://github.com/kubernetes-incubator/kubespray/">Kubespray</a> project.
+                          See the <a href="https://github.com/IDR/deployment/">IDR/deployment repository</a> for the required playbooks.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- end Deployment section -->
+        <!-- end Kubernetes section -->
+
+        <!-- begin JupyterHub section -->
+        <hr class="whitespace">
+        <div class="row column text-center">
+            <h2>Kubernetes cluster</h2>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="small-10 small-centered medium-10 medium-centered columns">
+                <div class="row horizontal">
+                    <div>
+                        <p>
+                          The VAE deployment uses the <a href="https://zero-to-jupyterhub.readthedocs.io/en/latest/">Zero to JupyterHub Helm chart</a> to deploy JupyterHub and configure notebooks.
+                          This is an automated process using GitLab CI/CD, and is controlled by the <a href="https://github.com/IDR/k8s-analysis-deploy">IDR/k8s-analysis-deploy repository</a> using <a href="https://github.com/roboll/helmfile">Helmfile</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end JupyterHub section -->
